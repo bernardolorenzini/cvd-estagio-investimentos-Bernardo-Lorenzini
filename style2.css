@@ -95,11 +95,11 @@ input[type = "submit"]{
 }
 
 /* validacoes de erros*/
-.error_validation{
-    color: red;
+.error_validation {
+    color: rgb(255, 72, 0);
     position: absolute;
     top: 57px;
-    font-size: .8rem;
+    font-size: 12px;
 }
 
 .template {
