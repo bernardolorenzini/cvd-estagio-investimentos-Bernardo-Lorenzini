@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: rgb(61, 35, 11);
+    border: none;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus{
+    outline: none;
+}
+
+a {
+    color: rgb(255, 72, 0);
+}
+
+body{
+    padding-top: 5vh; /* 5% da tela*/
+    background-size: cover;
+    background-position-y: -150-px;
+}
+
+#main {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(216, 201, 228);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#main h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.full_box{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half_box{
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing{
+    margin-right: 2.5%;
+}
+
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input{
+    border-bottom: 2px solid rgb(49, 47, 47);
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom:40px;
+}
+
+input:focus{
+    border-color: rgb(255, 72, 0);
+
+}
+input[type = "submit"]{
+    background-color: rgb(255, 72, 0);
+    color: white;
+    border:none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+#confirm{
+    margin-right: 5px;
+}
+#confirm, #confirm_label{
+    display: inline-block;
+    width: auto;   
+}
+
+/* validacoes de erros*/
+.error_validation{
+    color: red;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template {
+    display: none;
+}
+

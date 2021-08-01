@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body>
+
+    <div id="main"> 
+        <h1>Cadastro de Clientes</h1>
+        <form id="register_form">
+            <div class="full_box">
+                <label for="emial">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="E-mail" data-min-lenght="5">
+            </div>
+            <div class="half_box spacing">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Nome">
+            </div>
+            <div class="half_box">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Sobrenome">
+            </div>
+            <div class="half_box spacing">
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" placeholder="CPF">
+            </div>
+            <div class="half_box">
+                <label for="tel">CPF</label>
+                <input type="text" name="tel" id="cpf" placeholder="Telefone">
+            </div>
+            
+            <div class="full_box">
+                <input type="checkbox" id="confirm"> <label id="confirm_label">Confirmo que o Cliente pode ser cadastrado</label> 
+            </div>
+
+            <div class="full_box">
+                <input type="submit" id="btn-submit" value="Registrar">
+            </div>
+                
+            
+            <p class="error_validation template"></p>
+            <script type="text/javascript" src="scripts.js"></script>
+
+
+        </form>
+    </div>
+    
+</body>
+</html>
