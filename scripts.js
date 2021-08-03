@@ -8,6 +8,15 @@ class Validator{
 
     // INICIANDO A VALIDAÇAO DOS DADOS
     validate(form){
+
+        let currentValidations = document.querySelectorAll("form .error_validation");
+
+        if(currentValidations.length > 0 ){
+
+            this.cleanValidations(currentValidations);
+        }
+
+
         // recebendo inputs
         let inputs = form.getElementsByTagName('input');
         
